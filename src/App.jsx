@@ -13,7 +13,6 @@ import {
 import { useState, useEffect, useRef } from "react";
 
 function App() {
- 
   const [quote, setQuote] = useState("Just Do It");
   const [character, setCharacter] = useState("Character");
   const [anime, setAnime] = useState("Anime");
@@ -24,7 +23,7 @@ function App() {
   const linkedinUrlRef = useRef(`https://www.linkedin.com/shareArticle?mini=true&url=http://google.com&title=${quote}&summary=${quote} - ${character} (${anime})&source=LinkedIn`);
 
   const fetchQuote = (number) => {
-    fetch("/Anime-Quotes.json")
+    fetch("/data/Anime-Quotes.json")
       .then((response) => response.json())
       .then((data) => {
         if (data[number]) {
@@ -42,7 +41,7 @@ function App() {
   const randomQuote = () => {
     const number = Math.floor(Math.random() * 45);
     setRandomNumber(number);
-    bgUrlRef.current.style.backgroundImage = "url('./assets/jiraya.png')";
+    // bgUrlRef.current.style.backgroundImage = "url('/assets/jiraya.png')";
   };
 
   useEffect(() => {
@@ -63,13 +62,12 @@ function App() {
   }, [randomNumber]);
 
   return (
-    <div className="main-container custom-class @apply text-[white] text-center overflow-hidden relative m-0 before:content-[''] before:absolute before:w-full before:h-full before:bg-[url('./assets/jiraya.png')] before:bg-cover before:bg-center before:z-[-2] before:grayscale-[80%] before:left-0 before:top-0 after:content-[''] after:absolute after:w-full after:h-full after:mix-blend-multiply after:opacity-70 after:z-[-1] after:left-0 after:top-0; h-[94vh] md:h-full
-  font-family: Arial, sans-serif;" ref={bgUrlRef}>
+    <div className="main-container custom-class @apply text-[white] text-center overflow-hidden relative m-0 before:content-[''] before:absolute before:w-full before:h-full before:bg-[url('/assets/jiraya.png')] before:bg-cover before:bg-center before:z-[-2] before:grayscale-[80%] before:left-0 before:top-0 after:content-[''] after:absolute after:w-full after:h-full after:mix-blend-multiply after:opacity-70 after:z-[-1] after:left-0 after:top-0; h-[94vh] md:h-full font-family: Arial, sans-serif;">
       <div className="first-section w-full text-white h-[8vh] md:h-[15vh] p-2 flex justify-between items-center relative">
         <div className="background-overlay absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
         <div className="flex items-center gap-2 relative z-10">
           <img
-            src="./src/assets/logo.jpg"
+            src="/assets/logo.jpg"
             className="w-[10vw] md:w-[4vw] rounded-full"
             alt="Logo"
           />
@@ -85,7 +83,7 @@ function App() {
             ref={xUrlRef}
             target="blank"
           >
-            <img src="./src/assets/x-white.png" className="w-4" alt="x-logo" />
+            <img src="/assets/x-white.png" className="w-4" alt="x-logo" />
           </a>
           
           <a
@@ -94,7 +92,7 @@ function App() {
             className="p-2 border border-gray-500 rounded-xl hover:bg-blue-800 hover:text-black"
           >
             <img
-              src="./src/assets/linkedin-white.png"
+              src="/assets/linkedin-white.png"
               alt="linkedin-logo"
               className="w-4"
             />
@@ -141,7 +139,7 @@ function App() {
                 position="top center">
                 
                 <button className=" flex justify-center text-center text-white items-center gap-2 w-10vw">
-                  <span><img src="./src/assets/github-white.png" className="w-5" alt="" /></span>
+                  <span><img src="/assets/github-white.png" className="w-5" alt="" /></span>
                   <a href="https://github.com/RohitRajvaidya5/Anime-Quote">Github</a>
                 </button>
             </Popup>
