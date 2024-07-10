@@ -61,3 +61,23 @@
   z-index: -1;
 }
 
+.quote-fade-enter {
+  opacity: 0;
+  
+}
+
+.quote-fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.quote-fade-exit {
+  opacity: 1;
+  
+}
+
+.quote-fade-exit-active {
+  opacity: 0;
+}
+
+
