@@ -58,7 +58,7 @@ function App() {
   }, [randomNumber]);
 
   return (
-    <div className="main-container custom-class @apply text-[white] text-center overflow-hidden relative m-0 before:content-[''] before:absolute before:w-full before:h-full before:bg-[url('/assets/itachi.png')] before:bg-cover before:bg-center before:z-[-2] before:grayscale-[80%] before:left-0 before:top-0 after:content-[''] after:absolute after:w-full after:h-full after:mix-blend-multiply after:opacity-70 after:z-[-1] after:left-0 after:top-0; h-[94vh] md:h-full font-family: Arial, sans-serif;">
+    <div className="main-container custom-class @apply text-[white] text-center overflow-hidden relative m-0 before:content-[''] before:absolute before:w-full before:h-full before:bg-[url('/assets/jiraya.png')] before:bg-cover before:bg-center before:z-[-2] before:grayscale-[80%] before:left-0 before:top-0 after:content-[''] after:absolute after:w-full after:h-full after:mix-blend-multiply after:opacity-70 after:z-[-1] after:left-0 after:top-0; h-[94vh] md:h-full font-family: Arial, sans-serif;">
       <div className="first-section w-full text-white h-[8vh] md:h-[15vh] p-2 flex justify-between items-center relative">
         <div className="background-overlay absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
         <div className="flex items-center gap-2 relative z-10">
