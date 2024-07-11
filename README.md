@@ -5,7 +5,7 @@ Welcome to **AnimeQuote Oasis**, a web application that generates random quotes 
 
 ## Live Demo
 
-Check out the live demo hosted on Vercel: [AnimeQuote Oasis](https://anime-quote-two.vercel.app/)
+Check out the live demo hosted on Vercel: [AnimeQuote Oasis](https://animequote-oasis.vercel.app/)
 
 <br>
 
