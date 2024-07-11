@@ -39,11 +39,11 @@ function App() {
   };
 
   useEffect(() => {
-    xUrlRef.current.href = `https://twitter.com/intent/tweet?text=This quote is shared from "AnimeQuote Oasis"%0a${quote}%0a-${character} %0aVisit Now on https://anime-quote-two.vercel.app/ !!!%0a&hashtags=animequotes`;
+    xUrlRef.current.href = `https://twitter.com/intent/tweet?text=This quote is shared from "AnimeQuote Oasis"%0a${quote}%0a-${character} %0aVisit Now on https://animequote-oasis.vercel.app/ %0a&hashtags=animequotes`;
   });
 
   useEffect(() => {
-    linkedinUrlRef.current.href = `https://www.linkedin.com/shareArticle?mini=false&url=https://anime-quote-two.vercel.app/&title="This is an awesome website for anime quotes"&summary=Check out this great resource for all your anime quote needs!`;
+    linkedinUrlRef.current.href = `https://www.linkedin.com/shareArticle?mini=false&url=https://animequote-oasis.vercel.app//&title="This is an awesome website for anime quotes"&summary=Check out this great resource for all your anime quote needs!`;
   });
 
   useEffect(() => {
