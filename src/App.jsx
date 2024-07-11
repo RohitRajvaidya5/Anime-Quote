@@ -15,6 +15,7 @@ function App() {
   const xUrlRef = useRef(`https://twitter.com/intent/tweet?text=${quote}&hashtags=[hashtags]`);
   const linkedinUrlRef = useRef(`https://www.linkedin.com/sharing/share-offsite/?url={https://anime-quote-two.vercel.app/}`);
 
+  // Fetching Data From Anime-Quotes.json 
   const fetchQuote = (number) => {
     fetch("/data/Anime-Quotes.json")
       .then((response) => response.json())
