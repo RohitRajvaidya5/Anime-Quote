@@ -129,6 +129,7 @@ function App() {
           <button
           className="p-2 md:px-3 border border-gray-500 rounded-xl hover:bg-white hover:text-black md:text-sm text-sm"
           >Settings</button>
+          {/* New Quote Button Which Gives Random Quote on Click  */}
           <button
             onClick={randomQuote}
             className="p-2 md:px-3 border border-gray-500 rounded-xl hover:bg-white hover:text-black md:text-sm text-xs"
